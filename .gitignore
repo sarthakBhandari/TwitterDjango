@@ -1,5 +1,5 @@
 ".py[cod]" 
-tweetme2/settings/local.py
+tweetme2/settings
 db.sqlite3
 
 local.py
