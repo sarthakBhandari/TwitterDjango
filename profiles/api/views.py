@@ -60,6 +60,8 @@ def profile_api_view(request, username, *args, **kwargs):
 
 @api_view(['GET'])
 def api_feed_view(request, username, *args, **kwargs):
+    if not request.user.is_authenticated:
+        return Response({"detail":"user not authenticated"}, status=403)
     user_qs = User.objects.filter(username=username)
     if not user_qs.exists():
         return Response({"detail":"user not found"}, status=404)
