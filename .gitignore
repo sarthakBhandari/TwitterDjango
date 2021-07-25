@@ -1,11 +1,9 @@
 ".py[cod]" 
-tweetme2/settings/loca.py
-tweetme2/settings/base.py
+tweetme2/settings/local.py
 
 db.sqlite3
 
 local.py
-base.py
 
 .DS_Store
 bin/
